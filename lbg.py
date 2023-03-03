@@ -79,7 +79,7 @@ def create():
     # create an item from the Posted request's body data
     posted_data = request.get_json()
     name = posted_data['name']
-    description = posted_data['description-AJ']
+    description = posted_data['description']
     price = posted_data['price']
     item = item_builder(name, description, float(price), int(_id))
 
