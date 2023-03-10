@@ -1,0 +1,39 @@
+#Document to highlight what commands were used to create the repo
+
+    1  ls -al
+    2  cd sp2
+    3  mkdir sp2
+    4  ssh-keygen -t rsa -f ~/.ssh/id_rsa <<< y
+    5  cd .ssh
+    6  ls -al
+    7  cat id_rsa.pub
+    8  ssh -T git@github.com
+    9  cd ..
+   10  cd sp2
+   11  ls -al
+   12  git config user.name "andyjjones567"
+   13  git config --global user.name "andyjjones567"
+   14  git config --global user.email "andy@andyjjones.co.uk"
+   15  git clone git@github.com:andyjjones567/LBG-Python.git
+   16  cd LBG-Python/
+   17  git remote -v
+   18  ls -al
+   19  nano Dockerfile 
+   20  cat lbg.py
+   21  git status
+   22  git add .
+   23  git status
+   24  git commit -m "added Dockerfile"
+   25  git push
+   26  git status
+   27  sudo bash
+   28  history
+   29  touch history.txt | history >> history.txt
+    1  docker build -t jsb1 .
+    2  docker images
+    3  docker run -d -p 9000:8080 --name jsb1 jsb1
+    4  docker ps
+    5  history
+    6  exit
+    7  history
+    8  history >> history.txt
