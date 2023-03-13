@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo docker kill $(sudo docker ps -a -q) && sudo docker rm $(sudo docker ps -a -q)
+sudo docker kill $(sudo docker ps -a -q) && sudo docker rm $(sudo docker ps -a -q)
 sudo docker system prune -f
 sudo docker build -t sp2d .
 sudo docker images

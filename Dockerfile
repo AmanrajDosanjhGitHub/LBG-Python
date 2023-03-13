@@ -10,6 +10,7 @@ RUN pip install Flask
 # Copy the app file into the image working directory
 RUN git clone https://github.com/andyjjones567/LBG-Python.git
 WORKDIR /sp2/LBG-Python
+RUN git pull
 RUN pip install -r requirements.txt
 # State the listening port for the container.
 # The app's code does not actually specify the port, so it would be useful to include here.
