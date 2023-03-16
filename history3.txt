@@ -1,0 +1,58 @@
+    1  docker build -t jsb1 .
+    2  docker images
+    3  docker run -d -p 9000:8080 --name jsb1 jsb1
+    4  docker ps
+    5  history
+    6  exit
+    7  history
+    8  history >> history.txt
+    9  exit
+   10  docker stop jsb1
+   11  docker rm jsb1
+   12  docker ps
+   13  sh sp2-basg
+   14  sh sp2-bash
+   15  exit
+   16  docker ps 
+   17  docker stop sp2d
+   18  docker rm sp2d
+   19  docker ps
+   20  exit
+   21  docker ps
+   22  history
+   23  docker images
+   24  docker images ps
+   25  docker ps
+   26  docker stop e99b
+   27  docker rm e99b
+   28  docker ps
+   29  docker run -d -p 9000:8080 --name sp2d sp2d
+   30  docker ps -all
+   31  docker start 1ae4
+   32  docker ps
+   33  cat Dockerfile
+   34  exit
+   35  ls -al
+   36  cd ..
+   37  ls -al
+   38  chmod 777 sp2
+   39  ls -al
+   40  cd sp2
+   41  ls -al
+   42  sudo docker images
+   43  gcloud auth login
+   44  gcloud auth configer-docker
+   45  sudo gcloud auth configer-docker
+   46  sudo gcloud auth configure-docker
+   47  docker build -t john-street-boys-sp2 . 
+   48  docker image
+   49  docker images
+   50  cd LBG-Python/ 
+   51  docker build -t john-street-boys-sp2 . 
+   52  docker images
+   53  docker tag john-street-boys-sp2 gcr.io/lbg-cohort-10/john-street-boys
+   54  docker push john-street-boys-sp2 gcr.io/lbg-cohort-10/john-street-boys
+   55  docker push gcr.io/lbg-cohort-10/john-street-boys
+   56  docker images
+   57  history
+   58  touch history3.txt | history >> history3.txt
